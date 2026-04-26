@@ -32,11 +32,11 @@ html {
   }
 
   .text-corpo {
-    @apply text-[#212121] xl:text-xl cursor-pointer border-b-2 border-black border-opacity-5 py-2;
+    @apply text-[#212121] xl:text-xl cursor-pointer border-opacity-5 py-2;
   }
 
   .text-corpo-branco {
-    @apply text-[#ebebeb] xl:text-xl cursor-pointer border-b-2 border-black border-opacity-5 py-2;
+    @apply text-[#ebebeb] xl:text-xl cursor-pointer border-opacity-5 py-2;
   }
 
   .hover-suave {
