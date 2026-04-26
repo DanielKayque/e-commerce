@@ -17,7 +17,7 @@ const Banner = () => {
           Design limpo, caimento preciso e conforto que fala por si.
         </p>
         <div className="items-center">
-          <Button />
+          <Button text='Conheça nossos produtos' />
         </div>
       </div>
     </div>

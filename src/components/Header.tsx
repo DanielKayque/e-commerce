@@ -12,10 +12,10 @@ const Header = () => {
           Minha Loja
         </Link>
         <ul className="flex gap-12">
-          <li className="text-corpo">Eletrônicos</li>
-          <li className="text-corpo">Joias</li>
-          <li className="text-corpo">Roupas Masculinas</li>
-          <li className="text-corpo">Roupas Femininas</li>
+          <Link to={`/produto/categorias/electronics`} className="text-corpo">Eletrônicos</Link>
+          <Link to={`/produto/categorias/jewelery`} className="text-corpo">Joias</Link>
+          <Link to={`/produto/categorias/men's clothing`} className="text-corpo">Roupas Masculinas</Link>
+          <Link to={`/produto/categorias/women's clothing`} className="text-corpo">Roupas Femininas</Link>
         </ul>
       </div>
     </nav>

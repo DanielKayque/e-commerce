@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchProductById, type Product } from '../services/api';
+import { ProductReviews } from '../components/ProductReviews';
+import Button from '../ui/Button';
 
 const ProdutoDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -54,11 +56,16 @@ const ProdutoDetail = () => {
           <div className="text-3xl font-bold mb-8">
             R$ {data?.price.toFixed(2)}
           </div>
-          <button className="w-full md:w-max bg-black text-white px-12 py-4 rounded-full font-bold hover:bg-gray-800 transition-all">
+          {/* <button className="w-full md:w-max bg-black text-white px-12 py-4 rounded-full font-bold hover:bg-gray-800 transition-all">
             Adicionar à Sacola
-          </button>
+          </button> */}
+          <Button text="Adicionar à Sacola" />
         </div>
       </div>
+      <ProductReviews
+        rate={data?.rating.rate || 0}
+        count={data?.rating.count || 0}
+      />
     </div>
   );
 };

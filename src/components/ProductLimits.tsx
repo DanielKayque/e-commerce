@@ -30,6 +30,7 @@ const ProductLimits = () => {
           <ul key={product.id} className="">
             <Card
               image={product.image}
+              id={product.id}
               title={product.title}
               description={product.description}
               price={product.price}

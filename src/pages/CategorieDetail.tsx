@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  fetchData,
-  fetchProductByCategories,
-  type Product,
-} from '../services/api';
+import { fetchProductByCategories, type Product } from '../services/api';
 import Card from '../ui/Card';
 import { useParams } from 'react-router-dom';
 
@@ -45,6 +41,7 @@ export const CategoriesDetails = () => {
           <li key={data.id}>
             <Card
               key={data.id}
+              id={data.id}
               image={data.image}
               title={data.title}
               description={data.description}

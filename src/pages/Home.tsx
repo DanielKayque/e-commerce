@@ -1,5 +1,7 @@
 import Banner from '../components/Banner';
 import BestAvailables from '../components/BestAvailables';
+import { HomeFeatures } from '../components/HomeFeatures';
+import { ProductReviews } from '../components/ProductReviews';
 import SectionCategories from '../components/SectionCategories';
 
 const Home = () => {
@@ -8,6 +10,7 @@ const Home = () => {
       <Banner />
       <BestAvailables />
       <SectionCategories />
+      <HomeFeatures />
     </main>
   );
 };

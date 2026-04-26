@@ -30,6 +30,7 @@ const BestAvailables = () => {
       <ul className="grid grid-cols-4 gap-4">
         {data?.map((product) => (
           <Card
+          id={product.id}
             key={product.id}
             image={product.image}
             title={product.title}

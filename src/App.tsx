@@ -4,6 +4,7 @@ import { AllProducts } from './components/AllProducts';
 import ProdutoDetail from './pages/ProdutoDetail';
 import Header from './components/Header';
 import { CategoriesDetails } from './pages/CategorieDetail';
+import { Footer } from './components/Footer';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/produto/:id" element={<ProdutoDetail />} />
         <Route path="/produto/categorias/:id" element={<CategoriesDetails />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
