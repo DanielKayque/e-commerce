@@ -1,4 +1,4 @@
-import React, { use, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Card from '../ui/Card';
 import { getProducstLimit, type Product } from '../services/api';
