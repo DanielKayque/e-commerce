@@ -13,9 +13,9 @@ const App = () => {
       <BrowserRouter basename="/e-commerce/">
         <Header />
         <Routes>
-          <Route path="/e-commerce/" element={<Home />} />
-          <Route path="/e-commerce/produtos" element={<AllProducts />} />
-          <Route path="/e-commerce/produto/:id" element={<ProdutoDetail />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/produtos" element={<AllProducts />} />
+          <Route path="/produto/:id" element={<ProdutoDetail />} />
           <Route
             path="/produto/categorias/:id"
             element={<CategoriesDetails />}
