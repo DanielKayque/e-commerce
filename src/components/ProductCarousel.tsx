@@ -55,6 +55,8 @@ const ProductCarousel = () => {
               className={`flex-shrink-0 w-64 transition-all duration-300 ${getProductClasses(id)}`}
             >
               <Card
+                id={product.id}
+                price={product.price}
                 image={product.image}
                 title={product.title}
                 description={product.description}
