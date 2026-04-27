@@ -8,7 +8,7 @@ import { AllProducts } from './components/AllProducts';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/e-commerce/'>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
