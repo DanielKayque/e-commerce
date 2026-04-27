@@ -18,7 +18,7 @@ const SectionCategories = () => {
 
   const duplicateItems = [...menuItems, ...menuItems, ...menuItems];
   return (
-    <div className="w-full overflow-hidden py-12">
+    <div className="w-full h-24 overflow-hidden py-12">
       <ul className="flex w-max marquee gap-16 pr-8">
         {duplicateItems.map(({ label, icon: Icon, id }, index) => (
           <Link

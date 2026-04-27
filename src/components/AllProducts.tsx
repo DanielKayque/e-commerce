@@ -25,11 +25,12 @@ export const AllProducts = () => {
   }, []);
 
   return (
-    <div className="max-w-[1200px]">
-      <ul className="grid grid-cols-4 gap-4 items-center justify-center">
+    <div className="content-center-personalized">
+      <ul className="grid grid-cols-4 gap-8 items-center justify-center">
         {data?.map((data) => (
           <li key={data.id}>
             <Card
+            id={data.id}
               key={data.id}
               image={data.image}
               title={data.title}
